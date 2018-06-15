@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+    <!--some meta data for search engine-->
+    <meta name="description" content="Padmakala- Student">
+    <meta name="keywords" content="my profile, education details">
+    <meta name="author" content="Padmakala">
+
+    <title>MY Portfolio</title>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    <!--Bootstrap and customised style-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-md-6 col-sm-4 col-xs-4">
+                    <img class="title-logo" src="images/pp.jpg" alt="title">
+                </div>
+
+                <div class="title-super col-md-6 col-sm-8 col-xs-8 text-right text-uppercase">
+                    <h1>MY BLOG</h1>
+
+                    <button type="button" class="btn btn-default pull-right button-style" data-toggle="modal" data-target="#AboutMe">About Me
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
+            </div>
+        </header>
+
+        <!--Bootstrap carousel -->
+        <!-- Reference: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/img.png" alt="snap of name" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/cer1.jpg" alt="snap of certificate" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/cer.jpg" alt="snap of certificate" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/cer2.jpg" alt="snap of certificate" style="width:100%;">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/cer3.jpg" alt="snap of certificate" style="width:100%;">
+                            </div>
+
+                        </div>
+
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+                            <span>Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span>Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="row">
+            <header class="col-md-12 section">
+                <h2 class="programs-title">Details</h2>
+            </header>
+
+            <article class="col-md-4">
+                <img class="img-responsive img-circle img-thumbnail mouse-hover " src="images/ed.jpg" alt="Education" data-toggle="modal" data-target="#SIP">
+                <h3 class="title">Education</h3>
+            </article>
+
+            <article class="col-md-4">
+                <img class="img-responsive img-circle img-thumbnail mouse-hover" src="images/s.jpg" alt="Skills" data-toggle="modal" data-target="#FIP">
+                <h3 class="title">Skills</h3>
+            </article>
+
+            <article class="col-md-4">
+                <img class="img-responsive img-circle img-thumbnail mouse-hover" src="images/cc.jpg" alt="Contact Info" data-toggle="modal" data-target="#PIP">
+                <h3 class="title">Contact Info</h3>
+            </article>
+        </section>
+
+        <!--footer-->
+        <footer class="col-md-12">
+            <p>Designed & Developed by <a href="#">Padmakala</a>
+                <a href="https://engineering.careers360.com/colleges/pragati-engineering-college-surampalem" target="_blank">Pragati Engineering College</a>
+            </p>
+        </footer>
+    </div>
+
+    <!--Modal pop out information when clicking the program pictures-->
+    <div class="modal fade" id="AboutMe" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">ABOUT PADMAKALA</h3>
+                </div>
+                <div class="modal-body">
+                    <article>
+                        <h4 class="big">
+                        My name is padmakala. I belong to vetlapalem. Currently I'am persuing 4th year B.Tech in 
+                        Pragati Engineering College, Surampalem. In the scheem of ECE. I completed my intermediate 
+                        in Narayana jr.College, Kakinada. I completed my SSC in Mary Immaculate High School, Samalkot.
+                        Comming to my achivements I got merit in GO SOLAR workshop with the position third
+                        organised by Robokart in association with  innovation cell UMIC,IIT Bombay.Got silver
+                        medal in NCC drill.Got gold medal in throwball.comming to my personal profile. My father 
+                        name is Satyanarayana. He is a businessman. My mother name is Lakshmi. She is a home maker.
+                        I have an younger brother he is persuing 2nd year B.Tech.
+                    </h4>
+                    </article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SIP" role="dialog">
+        <div class="modal-dialog">
+            <!-- education details -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Education</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="img-responsive" src="images/edu.jpg" alt="Snap of certificate">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="FIP" role="dialog">
+        <div class="modal-dialog">
+            <!-- skills details -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Skills</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="img-responsive" src="images/sk.jpg" alt="Snap of certificate">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="PIP" role="dialog">
+        <div class="modal-dialog">
+            <!-- contact information -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Contact Info</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img class="img-responsive" src="images/pf.jpg" alt="Snap of certificate">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
